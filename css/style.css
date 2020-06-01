@@ -84,19 +84,24 @@ a:hover {
 /*headerブロック*/
 header {
   text-align: center; /*内容を中央よせ*/
-  /* background-color: red; */
+  background-color: white;
 }
+/* .title {
+  background-color: red;
+} */
 /*ロゴ画像設定*/
-#logo img {
-  width: 400px; /*画像幅*/
-  margin: 40px auto 40px; /*ロゴの上と下に40pxスペースを空ける設定*/
-}
+/* #logo img {
+  width: 400px; 画像幅
+  margin: 40px auto 40px; ロゴの上と下に40pxスペースを空ける設定
+} */
 header h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 30px 0;
   text-decoration: none;
-  color: white;
+  letter-spacing: 5px;
 }
+/*自己紹介部分
+---------------------------------------------------------------------------*/
 /*main-wrapper*/
 .main-wrapper {
   position: relative;
@@ -104,9 +109,12 @@ header h1 {
 .main-wrapper p {
   position: absolute;
   color: #666; /*文字は白に*/
-  top: 10%;
+  top: 20%;
   right: 10%;
   font-size: 32px;
+}
+.main-wrapper span {
+  font-size: 50px;
 }
 
 /*トップページのメイン画像
@@ -161,7 +169,7 @@ header h1 {
 }
 /*コンテンツのp(段落)タグ設定*/
 #contents p {
-  padding: 0px 20px 20px; /*上、左右、下への余白*/
+  padding: 10px 20px 0px; /*上、左右、下への余白*/
 }
 /*他。微調整。*/
 #contents p + p {
@@ -238,9 +246,11 @@ footer .pr {
   border: 1px solid #999; /*テーブルの枠線の幅、線種、色*/
   border-bottom: none; /*下線だけ消す*/
   text-align: left; /*文字を左寄せ*/
-  background: #eee; /*背景色*/
+  /* background: #eee; 背景色 */
+  background: white;
   font-weight: bold; /*太字に*/
   padding: 10px; /*ボックス内の余白*/
+  text-align: center;
 }
 /*テーブル１行目に入った見出し部分（※tamidashi）*/
 .ta1 th.tamidashi {
@@ -263,8 +273,8 @@ footer .pr {
 }
 /*テーブルの左側ボックス*/
 .ta1 th {
-  text-align: center; /*センタリング*/
-  width: 30%; /*幅*/
+  /* text-align: center; センタリング */
+  width: 20%; /*幅*/
 }
 
 /*トップページのNEWアイコン
